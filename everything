@@ -1,0 +1,47 @@
+*THIS IS test:a* //this will start in an repeat cmd
+{
+    "criteria": {
+        "restart": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "commands": [
+         "/scoreboard players add @e[type=!Player] time 1",
+            "/advancement revoke @s only test:b",
+            "/advancement grant @s only test:c"
+        ]
+    }
+}
+
+*THIS IS test:b*
+{
+    "criteria": {
+        "restart": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "commands": [
+         "/scoreboard players add @e[type=!Player] time 1",
+            "/advancement revoke @s only test:c",
+            "/advancement grant @s only test:a"
+        ]
+    }
+}
+
+*THIS IS test:c*
+{
+    "criteria": {
+        "restart": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "commands": [
+         "/scoreboard players add @e[type=!Player] time 1",
+            "/advancement revoke @s only test:b",
+            "/advancement grant @s only test:a"
+        ]
+    }
+}
