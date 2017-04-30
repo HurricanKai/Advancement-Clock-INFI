@@ -8,8 +8,9 @@
     "rewards": {
         "commands": [
          "/scoreboard players add @e[type=!Player] time 1",
-            "/advancement revoke @s only test:b",
+            "/advancement grant @s only test:b",
             "/advancement grant @s only test:c"
+            "/advancement revoke @s only test:a"
         ]
     }
 }
@@ -24,8 +25,9 @@
     "rewards": {
         "commands": [
          "/scoreboard players add @e[type=!Player] time 1",
-            "/advancement revoke @s only test:c",
+            "/advancement grant @s only test:c",
             "/advancement grant @s only test:a"
+            "/advancement revoke @s only test:b"
         ]
     }
 }
@@ -40,8 +42,10 @@
     "rewards": {
         "commands": [
          "/scoreboard players add @e[type=!Player] time 1",
-            "/advancement revoke @s only test:b",
+            "/advancement grant @s only test:b",
             "/advancement grant @s only test:a"
+            "/advancement revoke @s only test:c"
+            
         ]
     }
 }
